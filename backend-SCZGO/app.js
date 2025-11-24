@@ -18,4 +18,7 @@ app.use('/api/usuarios', require('./routes/user.routes'));
 // Rutas de monumentos
 app.use('/api/monumentos', require('./routes/monument.routes'));
 
+// Rutas turísticas
+app.use('/api/rutas', require('./routes/ruta.routes'));
+
 module.exports = app;
