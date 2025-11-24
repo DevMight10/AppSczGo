@@ -15,4 +15,7 @@ app.get('/', (req, res) => {
 app.use('/api/autenticacion', require('./routes/auth.routes'));
 app.use('/api/usuarios', require('./routes/user.routes'));
 
+// Rutas turísticas
+app.use('/api/rutas', require('./routes/ruta.routes'));
+
 module.exports = app;
