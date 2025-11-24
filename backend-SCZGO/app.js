@@ -15,4 +15,8 @@ app.get('/', (req, res) => {
 app.use('/api/autenticacion', require('./routes/auth.routes'));
 app.use('/api/usuarios', require('./routes/user.routes'));
 
+// Rutas de SCZ Share (red social)
+app.use('/api/publicaciones', require('./routes/publicacion.routes'));
+app.use('/api/historias', require('./routes/historia.routes'));
+
 module.exports = app;
